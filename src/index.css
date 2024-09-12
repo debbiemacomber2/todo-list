@@ -8,7 +8,7 @@
   color: rgba(255, 255, 255, 0.87);
   background-color: var(--backgroundColor);
 
-  --backgroundColor: #242424;
+  --backgroundColor: #004080;
   --fontColor: #646cff;
   --linkHover: #535bf2;
   font-synthesis: none;
@@ -29,8 +29,20 @@ body {
   margin: auto;
 }
 
+header {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: transparent 1px solid;
+  margin: 0.2rem;
+  background-color: #004080;
+}
 .ttl {
   text-align: center;
+}
+
+header h1 {
+  border-radius: 0.3rem;
+  padding-inline: 0.5rem;
 }
 
 button {
@@ -40,7 +52,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: rgb(150, 150, 256);
   cursor: pointer;
 }
 
@@ -58,4 +70,36 @@ button {
 .taskDetails {
   display: flex;
   justify-content: space-between;
+}
+
+.newItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  background: linear-gradient(to bottom, #535bf2, #004080);
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+input {
+  font: inherit;
+  background-color: rgb(150, 150, 256);
+  border: transparent solid 1px;
+  padding: 0.2rem;
+}
+
+input::placeholder {
+  color: black;
+}
+
+.pending,
+.completed {
+  margin: 2rem 0 0 0;
+}
+
+.pending h1,
+.completed h1 {
+  color: #004080;
+  padding-inline-start: 1rem;
+  background: linear-gradient(to right, #add8e6 30%, #004080);
 }
