@@ -46,10 +46,11 @@ header h1 {
 }
 
 button {
-  border-radius: 8px;
+  border-radius: 5px;
   border: 1px solid transparent;
-  padding: 0.5rem 1rem;
   font-size: 1em;
+  padding: 0.1rem 0.5rem;
+
   font-weight: 500;
   font-family: inherit;
   background-color: rgb(150, 150, 256);
@@ -58,18 +59,18 @@ button {
 
 .taskBox {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   border: var(--fontColor) 1px solid;
   margin: 0.5rem;
   border-radius: 0.5rem;
   padding: 0.5rem;
-  height: 7.5rem;
+  min-height: 7.5rem;
 }
 
-.taskDetails {
+.btns {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .newItem {
@@ -95,6 +96,7 @@ input::placeholder {
 .pending,
 .completed {
   margin: 2rem 0 0 0;
+  min-height: 25rem;
 }
 
 .pending h1,
@@ -102,4 +104,10 @@ input::placeholder {
   color: #004080;
   padding-inline-start: 1rem;
   background: linear-gradient(to right, #add8e6 30%, #004080);
+}
+
+.notFoundMsg {
+  text-align: center;
+  margin: 10rem 0;
+  color: rgba(0, 0, 0, 0.85);
 }

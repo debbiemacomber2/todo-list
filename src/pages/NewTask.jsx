@@ -33,7 +33,7 @@ export default function NewTask({ setToDo, toDo }) {
   };
 
   return (
-    <section className="newItem">
+    <form onSubmit={addTask} className="newItem">
       <input
         type="text"
         placeholder="Add New Task Here"
@@ -47,7 +47,7 @@ export default function NewTask({ setToDo, toDo }) {
         onChange={handleDate}
         value={dueDate}
       />
-      <button onClick={addTask}>+</button>
-    </section>
+      <button type="submit">+</button>
+    </form>
   );
 }
