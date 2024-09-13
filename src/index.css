@@ -111,3 +111,8 @@ input::placeholder {
   margin: 10rem 0;
   color: rgba(0, 0, 0, 0.85);
 }
+
+.sbscrpt {
+  vertical-align: super;
+  font-size: 0.75em;
+}

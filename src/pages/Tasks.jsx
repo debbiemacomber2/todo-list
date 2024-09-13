@@ -29,8 +29,13 @@ export default function Items({ toDo, setDone, done, setToDo }) {
         : Number(date) === 3 || Number(date) === 23
         ? "rd"
         : "th";
-
-    return `${days[(date % 7) - 1]}, ${date}${spscrpt} ${months[month - 1]}`;
+    const formattedDate = (
+      <time>
+        {days[(date % 7) - 1]}, {date}
+        <span className="sbscrpt">{spscrpt}</span> {months[month - 1]}
+      </time>
+    );
+    return formattedDate;
   };
   const handleDelete = (item) => {
     item.completed === true
