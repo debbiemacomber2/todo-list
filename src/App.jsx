@@ -33,14 +33,14 @@ function App() {
   }, [done, toDo]);
 
   return (
-    <>
+    <div className="box">
       <Header />
       <main>
         <NewTask setToDo={setToDo} toDo={toDo} />
         <Tasks toDo={toDo} setToDo={setToDo} done={done} setDone={setDone} />
       </main>
       <Footer />
-    </>
+    </div>
   );
 }
 
